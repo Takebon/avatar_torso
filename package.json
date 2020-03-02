@@ -1,0 +1,29 @@
+{
+  "name": "avatarsdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "cssnano": "^4.1.10",
+    "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "jszip": "^3.2.2",
+    "three": "^0.112.1",
+    "three-orbitcontrols": "^2.110.3",
+    "threejs-ply-loader": "^1.1.0"
+  }
+}

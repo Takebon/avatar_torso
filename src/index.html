@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Make 3D Avatar</title>
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	</head>
+	<body>
+		<div class="loader" id="loader">
+			<img src="./assets/loader.svg" alt="">
+		</div>
+		<section class="input" id="input">
+			<div id="clientInput" class="container">
+				<h2>How is it work.</h2>
+				<ul>
+					<li>Go to <a href="https://avatarsdk.com/" target="_blank" rel="avatarsdk.com">www.avatarsdk.com</a>, and sign up.</li>
+					<li>Activate your account by email, and sign in.</li>
+					<li>In additional info select web platform.</li>
+					<li>Fill application name and press submit button.</li>
+					<li>Copy the client id and secret to here.</li>
+				</ul>				
+				<div class="inpCont">
+					<hr class="hline">
+					<label for="clientId">Client ID:</label>
+					<input type="text" id="clientId" placeholder="Client ID" name="clientId" />
+				</div>
+				<div class="inpCont">
+					<label for="clientId">Client Sectet:</label>
+					<input type="text" name="clientSecret" id="clientSecret" placeholder="Client Secret" />
+				</div>
+				<button id="clientDataBtn" class="btn">OK</button>
+			</div>
+
+			<div id="imageInput" class="container">
+				<h2 id="title">Choose a selfie photo!</h2>
+				<input type="file" name="image" id="image" />
+				<div class="image-preview" id="imagePreview">
+					<label for="image" id="label">
+						<img src="" alt="Image Preview" class="image-preview__image" />
+						<img class="image-preview__default_icon" src="./assets/pig.svg" alt="image" id="img_prev" />
+					</label>
+				</div>
+				<button id="uploadBtn" class="btn">Upload</button>
+				<button id="downloadBtn" class="btn">Download Model</button>
+				<button id="clearBtn" class="btn">Clear Model</button>
+			</div>
+		</section>
+
+		<section class="canvas" id="canvas"></section>		
+		<script src="./script/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+*,*::after,*::before{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Lacquer', sans-serif;
+  background-color: #a6c5a6;
+}
+.loader{
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 10000;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 30%;
+  }
+}
+
+#icon{
+  font-size: 5em;
+}
+
+.container{
+  .inpCont{    
+    width: 100%;
+    .hline{
+      margin-top: .5em;
+    }
+  }
+  margin: 1em;
+  padding: 0.4em; 
+  border-radius: 15px;
+  min-height: 15em;
+  max-width: 20em;
+  min-width: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0.2em 0.2em 8px 1px  #666;
+  background-color: rgb(247, 241, 230);
+  
+  ul{
+    margin-left: 2em;
+    font-size: 0.8em;    
+  }
+}
+
+.input{
+  position: absolute;
+  max-width: 25em;
+}
+
+
+.image-preview{
+  min-width: 14em;
+  min-height: 10em;
+  border: 2px solid #dddddd;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__default_icon{
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  &__image{
+    display: none;
+    width: 100%;
+  }
+  #label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;        
+  }
+}
+
+
+#imageInput{
+  display: none;
+}
+
+#clientInput{
+  display: none;  
+
+  input{
+  font-family: inherit;
+  margin: 1em 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:focus{
+    outline: none;
+  }}
+}
+
+.btn{
+  font-family: inherit;
+  border: 1px solid black;
+  width: 10em;
+  height: 2em;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #666;
+  margin: 1em 0;
+  cursor: pointer;
+
+  &:focus{
+    outline: none;    
+  }
+  &:hover{
+    background-color: #265e2f;
+    color: #fff;
+    box-shadow: 3px 3px 3px #666;
+    transform: translateY(-1px);
+  }
+  &:active{    
+    box-shadow: none;
+    transform: translateY(1px);
+  }
+}
+#downloadBtn{
+  display: none;
+}
+
+#clearBtn{
+  display: none;
+}
+
+#image{
+  display: none;
+}
+
+.canvas{
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
