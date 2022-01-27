@@ -22,7 +22,7 @@
   "dependencies": {
     "downloadjs": "^1.4.7",
     "jszip": "^3.2.2",
-    "three": "^0.112.1",
+    "three": "^0.137.0",
     "three-orbitcontrols": "^2.110.3",
     "threejs-ply-loader": "^1.1.0"
   }
