@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "downloadjs": "^1.4.7",
-    "jszip": "^3.2.2",
+    "jszip": "^3.7.0",
     "three": "^0.112.1",
     "three-orbitcontrols": "^2.110.3",
     "threejs-ply-loader": "^1.1.0"
